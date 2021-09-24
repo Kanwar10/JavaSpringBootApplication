@@ -9,8 +9,9 @@ import java.util.List;
 
 @Service
 public class StudentService {
+
     @Autowired
-    StudentRepositery studentRepositery;
+    private StudentRepositery studentRepositery;
 
     public void createStudent(Student student)
     {
@@ -21,4 +22,13 @@ public class StudentService {
         return studentRepositery.findAll();
     }
 
+    public void deleteById(Long id) {
+        studentRepositery.deleteById(id);
+    }
+
+    public void updateById(Long id, Student student) {
+        studentRepositery.updateNameById(id,student.getName());
+        studentRepositery.updateCourseById(id,student.getCourse());
+        studentRepositery.updateCgpaById(id,student.getCgpa());
+    }
 }

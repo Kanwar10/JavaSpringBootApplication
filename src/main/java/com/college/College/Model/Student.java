@@ -8,6 +8,7 @@ import org.hibernate.validator.internal.engine.groups.Sequence;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -25,11 +26,10 @@ public class Student {
             generator = "studentId"
     )
     @Id
-    Long id;
-    @NonNull
-    String name;
-    Integer cgpa;
-    @NonNull
-    String course;
-
+    private Long id;
+    @NotNull
+    private String name;
+    private Integer cgpa;
+    @NotNull
+    private String course;
 }
