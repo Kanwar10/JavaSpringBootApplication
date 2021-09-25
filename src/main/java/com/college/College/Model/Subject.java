@@ -32,9 +32,7 @@ public class Subject {
     @NotNull
     private Integer credits;
 
-    @ManyToOne(
-            cascade = CascadeType.ALL
-    )
+    @OneToOne
     @JoinColumn(
             name = "course_id",
             referencedColumnName = "courseId"
