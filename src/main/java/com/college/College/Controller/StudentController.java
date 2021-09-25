@@ -7,7 +7,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-@RequestMapping("collegeApp/v1")
+@RequestMapping("collegeApp/v1/student")
 @RestController
 public class StudentController {
 
