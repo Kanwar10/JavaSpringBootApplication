@@ -10,30 +10,30 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 public interface StudentRepositery  extends  JpaRepository<Student,Long> {
 
-    @Modifying
-    @Transactional
-    @Query(
-            value = "update student set name=:name where id=:studentid",
-            nativeQuery = true
-    )
-    void updateNameById(@Param("studentid") Long id, @Param("name") String name);
-
-
-    @Modifying
-    @Transactional
-    @Query(
-            value = "update student set cgpa=:cgpa where id=:studentid",
-            nativeQuery = true
-    )
-    void updateCgpaById(@Param("studentid") Long id, @Param("cgpa") Integer cgpa);
-
-
-    @Modifying
-    @Transactional
-    @Query(
-            value = "update student set course=:course where id=:studentid",
-            nativeQuery = true
-    )
-    void updateCourseById(@Param("studentid") Long id, @Param("course") String course);
+//    @Modifying
+//    @Transactional
+//    @Query(
+//            value = "update student set name=:name where id=:studentid",
+//            nativeQuery = true
+//    )
+//    void updateNameById(@Param("studentid") Long id, @Param("name") String name);
+//
+//
+//    @Modifying
+//    @Transactional
+//    @Query(
+//            value = "update student set cgpa=:cgpa where id=:studentid",
+//            nativeQuery = true
+//    )
+//    void updateCgpaById(@Param("studentid") Long id, @Param("cgpa") Integer cgpa);
+//
+//
+//    @Modifying
+//    @Transactional
+//    @Query(
+//            value = "update student set course=:course where id=:studentid",
+//            nativeQuery = true
+//    )
+//    void updateCourseById(@Param("studentid") Long id, @Param("course") String course);
 
 }

@@ -26,4 +26,9 @@ public class CourseController {
         return courseService.getAllCourses();
     }
 
+    @PutMapping(path = "/{id}")
+    public void updateCourse(@PathVariable("id") Long id,@RequestBody Course course)
+    {
+        courseService.updateCourse(id, course);
+    }
 }

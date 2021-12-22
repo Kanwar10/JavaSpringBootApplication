@@ -28,8 +28,10 @@ public class Student {
     @Id
     private Long id;
     @NotNull
-    private String name;
-    private Integer cgpa;
+    private String firstName;
     @NotNull
-    private String course;
+    private String lastName;
+    @NotNull
+    int age;
+
 }
