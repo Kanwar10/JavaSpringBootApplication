@@ -30,7 +30,7 @@ public class Subject {
     private String name;
 
     @NotNull
-    private Integer credits;
+    private Integit ger credits;
 
     @OneToOne
     @JoinColumn(
@@ -38,7 +38,5 @@ public class Subject {
             referencedColumnName = "courseId"
     )
     private Course course;
-
-
 
 }
