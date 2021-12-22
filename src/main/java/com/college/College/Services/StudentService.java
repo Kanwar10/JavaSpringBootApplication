@@ -26,9 +26,9 @@ public class StudentService {
         studentRepositery.deleteById(id);
     }
 
-    public void updateById(Long id, Student student) {
-        studentRepositery.updateNameById(id,student.getName());
-        studentRepositery.updateCourseById(id,student.getCourse());
-        studentRepositery.updateCgpaById(id,student.getCgpa());
-    }
+//    public void updateById(Long id, Student student) {
+//        studentRepositery.updateNameById(id,student.getName());
+//        studentRepositery.updateCourseById(id,student.getCourse());
+//        studentRepositery.updateCgpaById(id,student.getCgpa());
+//    }
 }

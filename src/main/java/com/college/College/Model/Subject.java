@@ -30,10 +30,13 @@ public class Subject {
     private String name;
 
     @NotNull
-    private Integit ger credits;
+    private Integer credits;
 
-    @OneToOne
+    @ManyToOne(
+            cascade = CascadeType.ALL
+    )
     @JoinColumn(
+
             name = "course_id",
             referencedColumnName = "courseId"
     )
